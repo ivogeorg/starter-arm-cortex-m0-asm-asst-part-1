@@ -11,7 +11,8 @@ int main() {
     // Calling another function will
     // cause a new stack frame to be
     // set up for it
-    value = negate(value);
+    if (value > 0)
+        value = negate(value);
 
     return 0;
 }
