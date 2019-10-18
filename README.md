@@ -23,7 +23,18 @@ This assignment comes in two parts, assigned _separately_:
          R13 | SP | Stack pointer
          R14 | LR | Link register
          R15 | PC | Program counter
-         (R16) | CPSR | Current program status register (
+         (R16) | CPSR | Current program status register (aka ASPR)
+         
+      4. The CSPR (aka ASPR, for Application Program Status Register) contains 4 important 1-bit flags:
+      
+         Flag mnemonic | Flag name | Enabled (value = 1) if the result of the last instruction is
+         --- | --- | ---
+         N | Negative | A negative number
+         Z | Zero | A zero value
+         C | Carry | A value that requires a 33rd bit to be fully represented
+         V | Overflow | A value that cannot be represented in 32 bit two’s complement
+         
+      5. The NZCV flags are important for [conditional execution](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0497a/BABEHFEF.html). By rule, only the comparison instructions always change those flags. Any other instruction can be forced to change the flags by appending an `S` to its name (e.g. `MOV` becomes `MOVS`). See the [instruction set summary](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0497a/BABIHJGA.html).
       
    2. The contents of the instruction cache (assume it is equivalent to the program you are tracing)
    3. The contents of the data cache
@@ -48,16 +59,9 @@ This assignment comes in two parts, assigned _separately_:
 ### Github
 
 1. Github Tutorial for Beginners ([webpage](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)).
-
 2. Github Basics for Mac and Windows ([video](https://www.youtube.com/watch?v=0fKg7e37bQE)).
-
 3. git & Github Crash Course for Beginners ([video](https://www.youtube.com/watch?v=SWYqp7iY_Tc)).
-
 4. Introduction to Github for Beginners ([video](https://www.youtube.com/watch?v=fQLK8Ib_SKk)).
-
 5. About `git` ([webpage](https://git-scm.com/about)).
-
 6. `git` [documentation](https://git-scm.com/doc) (webpage, book, videos, reference manual).
-
 7. [Github markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
