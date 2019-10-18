@@ -1,8 +1,8 @@
 | Instruction | Intepretation |
 | --- | --- |
 | negate: | _Label (corresponds to the address of the first following instruction)_ |
-| `[sub](http://infocenter.arm.com/help/topic/com.arm.doc.dui0497a/BABFFEJF.html)     sp, sp, #8` | Subtact 8 from the stack pointer (and store into the stack pointer) |
-| `str     r0, [sp, #4]` | |
+| [sub](http://infocenter.arm.com/help/topic/com.arm.doc.dui0497a/BABFFEJF.html)     `sp, sp, #8` | Subtact 8 from the stack pointer (and store into the stack pointer) |
+| [str](http://infocenter.arm.com/help/topic/com.arm.doc.dui0497a/BABJGHFJ.html)     `r0, [sp, #4]` | |
 | `ldr     r3, [sp, #4]` | |
 | `rsbs    r3, r3, #0` | |
 | `movs    r0, r3` | |
