@@ -1,10 +1,12 @@
 # CPE 1040 - Introduction to Computer Engineering
 
-## Assignment: Tracing an ARM Assembly Program
+## Assignment: Tracing an ARM Assembly Program (Part 1)
 
 ### 1. Summary
 
-This assignment asks you to _trace_ a short program of ARM assembly language, originally compiled from a C program. Both are provided in the repository, but you can see them next to each other in the online [Compiler Explorer](https://godbolt.org/z/4W6MNq), with code correspondences highlighted in different colors. To trace a program means to mock-execute each line/instuction and follow the manipulation of the data.
+This assignment comes in two parts, assigned _separately_:
+1. Part 1 asks you to interpret (in human language) a short ARM assembly program that was originally compiled from a C program. Both programs are provided in the repository, but you can see them next to each other in the online [Compiler Explorer](https://godbolt.org/z/4W6MNq), with code correspondences highlighted in different colors. 
+2. Part 2 asks you to _trace_ the same  program. To trace a program means to mock-execute each line/instuction and follow the manipulation of the data.
 
 ### 2. Requirements
 
@@ -25,16 +27,23 @@ This assignment asks you to _trace_ a short program of ARM assembly language, or
       
    2. The contents of the instruction cache (assume it is equivalent to the program you are tracing)
    3. The contents of the data cache
+   4. The contents of the call stack
+2. For part 1, you only have to fill out the _Interpretation_ column for each instruction in the table in the [instruction-intepretation.md](instruction-intepretation.md) file. **You do not have to trace the state of the program as instructions are executed. This will be assigned in part 2.**
 
 ## Resources
 
 ## C
 
-TODO
+1. C [reference](https://en.cppreference.com/w/c)
+2. C [tutorial](https://www.cprogramming.com/tutorial/c-tutorial.html)
+3. C [interactive tutorial](https://www.learn-c.org/)
+4. Open book [How to Think Like a Computer Scientist: C Version](https://open.umn.edu/opentextbooks/textbooks/how-to-think-like-a-computer-scientist-c-version-1999)
 
 ## ARM assembly
 
-TODO
+1. ARM Cortex-M0 [Instruction Set Summary](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0497a/BABIHJGA.html)
+2. Azeria Labs [Introduction to ARM Assembly Basics](https://azeria-labs.com/writing-arm-assembly-part-1/)
+3. Dave Space [Introduction to ARM](http://www.davespace.co.uk/arm/)
 
 ### Github
 
