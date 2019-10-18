@@ -1,11 +1,11 @@
 | Instruction | Intepretation |
 | --- | --- |
 | negate: | _Label (corresponds to the address of the first following instruction)_ |
-| [sub](http://infocenter.arm.com/help/topic/com.arm.doc.dui0497a/BABFFEJF.html)     `sp, sp, #8` | Subtact 8 from the stack pointer (and store into the stack pointer) |
-| [str](http://infocenter.arm.com/help/topic/com.arm.doc.dui0497a/BABJGHFJ.html)     `r0, [sp, #4]` | |
-| `ldr     r3, [sp, #4]` | |
-| `rsbs    r3, r3, #0` | |
-| `movs    r0, r3` | |
+| [sub](http://infocenter.arm.com/help/topic/com.arm.doc.dui0497a/BABFFEJF.html)`     sp, sp, #8` | Subtact 8 from the stack pointer (and store into the stack pointer) |
+| [str](http://infocenter.arm.com/help/topic/com.arm.doc.dui0497a/BABJGHFJ.html)`     r0, [sp, #4]` | |
+| [ldr](http://infocenter.arm.com/help/topic/com.arm.doc.dui0497a/BABJGHFJ.html)`     r3, [sp, #4]` | |
+| [rsbs](http://infocenter.arm.com/help/topic/com.arm.doc.dui0497a/BABFFEJF.html)`    r3, r3, #0` | |
+| [movs](http://infocenter.arm.com/help/topic/com.arm.doc.dui0497a/BABHGAJI.html)`    r0, r3` | |
 | `add     sp, sp, #8` | |
 | `bx      lr` | |
 | | |
