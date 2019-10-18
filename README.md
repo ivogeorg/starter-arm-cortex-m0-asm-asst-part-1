@@ -4,7 +4,7 @@
 
 ### 1. Summary
 
-This assignment asks you to _trace_ a short program of ARM assembly language, originally compiled from a C program. Both a provided, and you can see them next to each other in the online [Compiler Explorer](https://godbolt.org/z/UwYDhA), with code correspondences highlighted in different colors. To trace a program means to mock-execute each line/instuction and follow the manipulation of the data.
+This assignment asks you to _trace_ a short program of ARM assembly language, originally compiled from a C program. Both are provided in the repository, but you can see them next to each other in the online [Compiler Explorer](https://godbolt.org/z/4W6MNq), with code correspondences highlighted in different colors. To trace a program means to mock-execute each line/instuction and follow the manipulation of the data.
 
 ### 2. Requirements
 
